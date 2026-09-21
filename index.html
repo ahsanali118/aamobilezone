@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.A Mobile Zone - Hawksbay Road Karachi</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #dc2626;
+            --success: #16a34a;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #ffffff;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--success);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #15803d;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 15px;
+        }
+        .welcome-box {
+            text-align: center;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 30px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #bfdbfe;
+        }
+        .welcome-box h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .delivery {
+            background: #fef2f2;
+            border: 1px dashed var(--accent);
+            color: var(--accent);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        h2.section-heading {
+            border-left: 5px solid var(--secondary);
+            padding-left: 10px;
+            color: var(--primary);
+            margin: 35px 0 20px 0;
+            font-size: 1.5rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        .product-card p {
+            font-size: 0.95rem;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .wholesale, .best-price {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+        .services-list {
+            list-style: none;
+        }
+        .services-list li {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-size: 1.05rem;
+        }
+        .contact-panel {
+            background: #fafafa;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-panel p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .map-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            margin-top: 15px;
+        }
+        .map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 4px solid var(--secondary);
+        }
+        footer p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A.A Mobile Zone</h1>
+        <p>Shop #248, Musharraf Colony Sector 9C, Hawksbay Road, Karachi</p>
+        <a href="https://wa.me/923022638564" class="btn" target="_blank">💬 Call / WhatsApp: 03022638564</a>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECTION 1: WELCOME -->
+        <section class="welcome-box">
+            <h2>Welcome to A.A Mobile Zone - Your Trusted Mobile Shop in Musharraf Colony!</h2>
+            <div class="tags">
+                <span class="tag">All Mobile Items Available</span>
+                <span class="tag">Original Accessories</span>
+                <span class="tag">EasyPaisa JazzCash Services</span>
+            </div>
+            <div class="delivery">
+                📍 Home Delivery in Hawksbay, Maripur, Mauripur, Keamari
+            </div>
+        </section>
+
+        <!-- SECTION 2: PRODUCTS -->
+        <section>
+            <h2 class="section-heading">🔥 Our Products - All Items Available</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>1. Super Fast Charger Original</h3>
+                    <p>Full Box Pack with Type-C to Type-C Cable - Super Fast Charging.</p>
+                    <div class="price">Rs. 2999</div>
+                </div>
+                <div class="product-card">
+                    <h3>2. Type-C Cables & Fast Chargers</h3>
+                    <p>All Quality variants available to power your devices safely.</p>
+                    <div class="price">Starting Rs. 500</div>
+                </div>
+                <div class="product-card">
+                    <h3>3. Mobile Pouches, Protectors, Glass & Handsfree</h3>
+                    <p>Premium options for All Models at unbeatable rates.</p>
+                    <div class="wholesale">Wholesale Rate</div>
+                </div>
+                <div class="product-card">
+                    <h3>4. Power Banks, Speakers & Airpods</h3>
+                    <p>Top brand gadgets with maximum performance.</p>
+                    <div class="best-price">Best Price</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: EASYPAISA JAZZCASH -->
+        <section>
+            <h2 class="section-heading">💳 EasyPaisa - JazzCash - Load - Bill Pay Center</h2>
+            <p style="font-weight: bold; margin-bottom: 15px; color: var(--secondary);">One Stop Solution in Sector 9C Musharraf Colony!</p>
+            <ul class="services-list">
+                <li>✅ <strong>EasyPaisa:</strong> Money Transfer, Bill Pay, Mobile Load</li>
+                <li>✅ <strong>JazzCash:</strong> Money Transfer, Bill Pay, Mobile Load</li>
+                <li>✅ <strong>All Network Load:</strong> Jazz, Zong, Ufone, Telenor</li>
+                <li>✅ <strong>All Bill Pay:</strong> KE, SSGC, SUI Gas, PTCL, Water Board</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4 & 5: CONTACT & MAP -->
+        <section>
+            <h2 class="section-heading">📍 Location & Contact</h2>
+            <div class="contact-panel">
+                <p><strong>Address:</strong> A.A Mobile Zone Shop Number 248, Sector 9C, Musharraf Colony, South Hawksbay Road, Karachi - Near Hawksbay Mor</p>
+                <p><strong>Contact Number:</strong> 0302-2638564</p>
+                <p><strong>WhatsApp Support:</strong> <a href="https://wa.me/923022638564" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: none;">Click to Chat</a></p>
+                <p><strong>Timings:</strong> 10 AM to 10 PM - 7 Days Open</p>
+            </div>
+            
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.3343!2d66.9015!3d24.8525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315904ab72fb3%3A0x673da0e8e4a9e992!2sMusharraf%20Colony%20Sector%209%20C%20Mauripur%2C%20Karachi!5e0!3m2!1sen!2spk!4v1710000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>A.A Mobile Zone © 2026 | Shop 248, Sector 9C, Musharraf Colony, South Hawksbay Road Karachi | 03022638564 | EasyPaisa JazzCash Load Bill Pay</p>
+    </footer>
+
+</body>
+</html>
